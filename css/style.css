@@ -1,124 +1,116 @@
-/* --- Google Fonts --- */ 
+/* --- Google Fonts --- */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
-
-
-
-
 
 /* --- Fonts --- */
 body {
   font-family: "Open Sans", "Helvetica", "sans-serif";
   padding-bottom: 200px;
+  background: linear-gradient(hsl(0, 0%, 98%), hsl(3, 47%, 96%));
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Montserrat", "sans-serif";
 }
 
-
+.container {
+  background-color: white;
+  padding: 24px;
+}
 
 .image-selector {
-	text-align: center;
+  text-align: center;
 }
-
-
-
-.row {
-	border: 1px solid rgba(0, 0, 0, 0.24);
-}
-
 
 .one-third {
-	border: 1px solid rgba(255,255,255, 0.2);
-	text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
 }
-
 
 #image-url-input {
-	width: 500px;
+  width: 500px;
 }
 
-
-.image-container {		
-	height:300px;
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	margin: auto 0;
-	padding: auto 0;	
-	border: 3px solid rgba(247, 247, 247, 0.9);
+.image-container {
+  height: 300px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto 0;
+  padding: auto 0;
+  border: 3px solid rgba(247, 247, 247, 0.9);
 }
 
-#container-BGImage {			
-	/* The property is set according to the url in the text input at the top of the page*/
-	/*background-image: url('');	*/
+#container-BGImage {
+  /* The property is set according to the url in the text input at the top of the page*/
+  /*background-image: url('');	*/
 }
 
-#container-BGImageBGColor {	
-	/* The properties are set according to the url in the text input at the top of the page*/
-	/*background-image: url('');	*/
-	/*background-color:rgba(0, 107, 139, 0.34);		*/
-	/*background-blend-mode: overlay;*/
+#container-BGImageBGColor {
+  /* The properties are set according to the url in the text input at the top of the page*/
+  /*background-image: url('');	*/
+  /*background-color:rgba(0, 107, 139, 0.34);		*/
+  /*background-blend-mode: overlay;*/
 }
 
-#container-BGImageBGGradient {		
-	/* not needed anymore, set from script with values from input elements on page*/
-	/*background-image: linear-gradient(rgba(0, 147, 255, 0.17), rgba(255, 180, 180, 0.66)), url('https://unsplash.it/1000/600');	*/
-	background-blend-mode: difference;	
+#container-BGImageBGGradient {
+  /* not needed anymore, set from script with values from input elements on page*/
+  /*background-image: linear-gradient(rgba(0, 147, 255, 0.17), rgba(255, 180, 180, 0.66)), url('https://unsplash.it/1000/600');	*/
+  background-blend-mode: difference;
 }
-
 
 .details p {
-	font-size: 1.3em;
+  font-size: 1.3em;
 }
 
 #colorSetupContainer {
-	text-align: center;
-	margin: 20px auto;
+  text-align: center;
+  margin: 20px auto;
 }
 
 #colorSetupContainer label {
-	font-size: 1.3em;
-	margin: auto 20px;
-	position: relative;
-	bottom: 10px;
+  font-size: 1.3em;
+  margin: auto 20px;
+  position: relative;
+  bottom: 10px;
 }
 #colorSetupContainer input {
-	width: 100px;
-	height: 50px;
+  width: 100px;
+  height: 50px;
 }
 
 #opacitySetupContainer1 {
-	text-align: center;
-	margin: 20px auto;
+  text-align: center;
+  margin: 20px auto;
 }
 
-#opacitySetupContainer1 label{
-	display: inline-block;	
-	margin: auto 20px;
-	font-size: 1.3em;
+#opacitySetupContainer1 label {
+  display: inline-block;
+  margin: auto 20px;
+  font-size: 1.3em;
 }
 
 #slider1 {
-	display: inline-block;
-	width: 100px;	
-	position:relative;
-	top:6px;
+  display: inline-block;
+  width: 100px;
+  position: relative;
+  top: 6px;
 }
 
 #blendSetupContainer1 {
-	text-align: center;
-	padding-bottom: 10px;
+  text-align: center;
+  padding-bottom: 10px;
 }
-#blendSetupContainer1 label{	
-	font-size: 1.3em;
-	margin-right: 20px;	
+#blendSetupContainer1 label {
+  font-size: 1.3em;
+  margin-right: 20px;
 }
 
 #blendSetupContainer1 select {
-	margin-bottom: 10px;
-	width: 60%;
-	height: 40px;
-	max-width: 250px;
-	font-size: 1.3em;		
-	margin: 10px auto;
+  margin-bottom: 10px;
+  width: 60%;
+  height: 40px;
+  max-width: 250px;
+  font-size: 1.3em;
+  margin: 10px auto;
 }
