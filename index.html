@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">			
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta title="Webpage title here">	
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+		<div class="container">
+			<h1>Background Experiments</h1>		
+			
+			
+			<div>
+				<input id='image-url-input' type="text" value="https://unsplash.it/1000/600" onkeypress="return lookForEnter(event)">
+				<a href="#" class="btn btn-primary" onclick="refreshImages()">Go!</a>
+			</div>
+			
+			<hr>
+			<hr>
+			<hr>
+	
+			<div class="row">
+				<div class='one-third col-lg-4 col-md-4'>					
+					<h2>Original Image</h2>					
+					<div class="image-container" id="container-BGImage"></div>
+					<div class='details'><p>As Background Image</p></div>
+				</div>
+				<div class='one-third col-lg-4 col-md-4 form-inline'>
+					<h2>Image and Color</h2>
+					<div class='image-container' id='container-BGImageBGColor'></div>
+					<div class='details'><p>Blending Background Image and Background Color</p></div>
+					<hr>
+					<div id='colorSetupContainer'>
+						<label for="colorWell">Color</label>
+						<input type="color" id="colorWell" value="#0221b9">
+					</div>
+					<hr>
+					<div id='opacitySetupContainer1'>
+						<label for="opacitySlider">Opacity </label>
+						<input type="range" class="opacitySlider" id='slider1' min="0" max="100" step="1" value="40">					
+						<label id='slider1Label'></label>
+					</div>
+					<hr>
+					<div id="blendSetupContainer1" class="form-group">
+						<label for="exampleInputEmail1">Background Blend Mode</label>
+    				<select class="form-control" id="blendSelector1">
+							<option>normal</option>
+							<option>multiply</option>
+							<option>screen</option>
+							<option selected="selected">overlay</option>
+							<option>darken</option>
+							<option>lighten</option>
+							<option>color-dodge</option>
+							<option>saturation</option>
+							<option>color</option>
+							<option>luminosity</option>
+						</select> 
+					</div>
+				</div>
+				<div class='one-third col-lg-4 col-md-4'>
+					<h2>Image and Gradient</h2>					
+					<div class="image-container" id='container-BGImageBGGradient'></div>
+					<div class='details'><p>Blending Background Image and Background Gradient</p></div>
+					<hr>
+				</div>
+			</div>
+			
+			<hr>
+			<hr>
+			<hr>
+			
+					
+		</div>
+		
+			<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>			
+			<script src="js/main.js"></script>
+	</body>
+</html>
